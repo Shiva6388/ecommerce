@@ -1,13 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+:root {
+  --primary-color: #00d290;
+  --primary-light: #dcfce7;
+  --secondary-color: #ff4141;
+  --text-dark: #171717;
+  --text-light: #525252;
+  --bg-gradient: linear-gradient(180deg, #f8ffe5, #ffffff);
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  --hover-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
- 
+
+body {
+  font-family: "Poppins", "Nunito Sans", "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--text-dark);
+  background-color: #ffffff;
 }

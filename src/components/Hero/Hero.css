@@ -1,49 +1,78 @@
-.hero{
-    height: 100vh;
-    background:linear-gradient(180deg,#47fdae,#e1ffea22 60%);
+.hero {
+    height: 90vh;
+    /* Slightly improved height */
+    background: linear-gradient(135deg, #ffe5e5 0%, #e8f9ff 100%);
+    /* Subtle, modern pastel mesh */
     display: flex;
+    align-items: center;
+    /* Better vertical centering */
 }
-.hero-left{
-    flex:1;
+
+.hero-left {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 100px;
+    gap: 20px;
+    /* Consistent spacing */
+}
 
-    padding-left:80px ;
-    
-}
-.hero-left h2{
-    color: #090909;
-    font-size: 20px;
+.hero-left h2 {
+    color: var(--text-dark);
+    font-size: 22px;
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
-.hero-left p{
-    color: #171717;
-    font-size: 60px;
-    font-weight: 700;
+
+.hero-left p {
+    color: var(--text-dark);
+    font-size: 70px;
+    /* Larger, bolder text */
+    font-weight: 800;
+    line-height: 1.1;
 }
-.hero-hand-icon{
+
+.hero-hand-icon {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.hero-latest-btn{
+
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
-    width: 300px;
-    height: 50px;
-    border-radius: 75px;
+    gap: 15px;
+    width: 280px;
+    height: 60px;
+    border-radius: 99px;
+    /* Pill shape */
     margin-top: 30px;
-    background: #ff4141;
+    background: var(--secondary-color);
     color: white;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(255, 65, 65, 0.3);
+    /* Nice glow */
+    transition: all 0.3s ease;
 }
-.hero-right{
+
+.hero-latest-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 65, 65, 0.4);
+}
+
+.hero-right {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.hero-right img {
+    max-width: 80%;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.1));
 }
