@@ -66,4 +66,4 @@ const CartItems = () => {
     )
 }
 
-export default CartItems
+export default CartItems;
